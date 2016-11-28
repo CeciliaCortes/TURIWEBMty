@@ -19,7 +19,7 @@ namespace TURIWEBMty.Content
         public DbSet<Transporte> Transportes { get; set; }
         public DbSet<Lugar> Lugares { get; set; }
         public DbSet<Ubicacion> Ubicaciones { get; set; }
-        public DbSet<logio> logio { get; set; }
+        public DbSet<logio> login { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

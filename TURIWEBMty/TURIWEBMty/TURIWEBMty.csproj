@@ -198,9 +198,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611280125198_Initial.cs" />
-    <Compile Include="Migrations\201611280125198_Initial.Designer.cs">
-      <DependentUpon>201611280125198_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201611280259088_initial.cs" />
+    <Compile Include="Migrations\201611280259088_initial.Designer.cs">
+      <DependentUpon>201611280259088_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Horario.cs" />
@@ -267,8 +267,8 @@
     <Content Include="Views\Principal.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611280125198_Initial.resx">
-      <DependentUpon>201611280125198_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201611280259088_initial.resx">
+      <DependentUpon>201611280259088_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

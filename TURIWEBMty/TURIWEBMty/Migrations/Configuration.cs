@@ -26,6 +26,27 @@ namespace TURIWEBMty.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            context.login.AddOrUpdate(p => p.Nombre,
+        new Models.logio
+
+        {
+            Nombre = "Debra Garcia",
+            Correo = "debra@example.com",
+            Contraseña = "123456789"
+        },
+         new Models.logio
+         {
+             Nombre = "Thorsten Weinrich",
+             Contraseña = "Redmond",
+             Correo = "thorsten@example.com"
+         },
+         new Models.logio
+         {
+             Nombre = "Yuhong Li",
+             Contraseña = "WA",
+             Correo = "yuhong@example.com"
+         }
+         );
         }
     }
 }

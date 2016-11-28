@@ -20,11 +20,11 @@ namespace TURIWEBMty.Controllers
             var display = Userloginvalues().Where(m => m.Correo == objuserlogin.Correo && m.Contraseña == objuserlogin.Contraseña).FirstOrDefault();
             if (display != null)
             {
-                ViewBag.Status = "CORRECT UserNAme and Password";
+                ViewBag.Status = "Bienvenido";
             }
             else
             {
-                ViewBag.Status = "INCORRECT UserName or Password";
+                ViewBag.Status = "Contraseña o Usuario Incorrecto";
             }
             return View(objuserlogin);
         }

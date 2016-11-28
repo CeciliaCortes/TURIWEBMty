@@ -15,25 +15,48 @@
         return true;
     }
 </script>
-<h3>Simple We API Login Form </h3>
+<body background="rosa2.jpg"></body>
+<h3>Iniciar Sesion</h3>
 @using (Html.BeginForm("Index", "Home"))
 {
-    <table width="40%" cellpadding="1" cellspacing="5">
+    
+    <table width="40" cellpadding="1" cellspacing="5" >
         <tr>
-            <td colspan="2" style="color:#f00;font-size:larger">@ViewBag.Status</td>
+            <td colspan="2" style="color:black;font-size:large">@ViewBag.Status</td>
         </tr>
         <tr>
-            <td align="right">User Name :</td>
+            <td align="right">Nombre de Usuario/Correo :</td>
             <td>@Html.TextBoxFor(m => m.Correo, new { @style = "width:200px", @id = "txtusername" })</td>
         </tr>
         <tr>
-            <td align="right">User Password :</td>
+            <td align="right">Contraseña :</td>
             <td>@Html.PasswordFor(m => m.Contraseña, new { @style = "width:200px", @id = "txtuserpassword" })</td>
         </tr>
         <tr>
             <td colspan="2">
-                <input type="submit" value="Login" title="login" onclick="" display();" />
+                <input type="submit" value="Acceder" title="login" onclick="" display(); />
             </td>
         </tr>
     </table>
+
+    <form id="addRegistro" data-bind="submit: addRegistro">
+        <fieldset>
+            <legend>Registrarse</legend>
+            <ol>
+                <li>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="Nombre" />
+                </li>
+                <li>
+                    <label for="Correo">Correo</label>
+                    <input type="text" name="Correo" />
+                </li>
+                <li>
+                    <label for="Contraseña">Contraseña</label>
+                    <input type="text" name="Contraseña" />
+                </li>
+            </ol>
+            <input type="submit" value="Agregar" />
+        </fieldset>
+    </form>
 }

@@ -158,7 +158,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="hola\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -205,6 +204,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Horario.cs" />
+    <Compile Include="Models\logio.cs" />
     <Compile Include="Models\Lugar.cs" />
     <Compile Include="Models\Municipio.cs" />
     <Compile Include="Models\Transporte.cs" />

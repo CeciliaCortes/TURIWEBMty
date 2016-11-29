@@ -2,61 +2,110 @@
 @{ 
     ViewBag.Title = "Index";
 }
-<script language="javascript">
-    function display() {
-        if ($("#txtusername").attr("value") == "") {
-            alert("Please Enter your UserName.");
-            return false;
-        } else if ($("#txtuserpassword").attr("value") == "") {
-            alert("Please enter UserPassword.");
-            return false;
-        }
-        alert("Login Successfully");
-        return true;
-    }
-</script>
-<body background="rosa2.jpg"></body>
-<h3>Iniciar Sesion</h3>
-@using (Html.BeginForm("Index", "Home"))
-{
-    
-    <table width="40" cellpadding="1" cellspacing="5" >
-        <tr>
-            <td colspan="2" style="color:black;font-size:large">@ViewBag.Status</td>
-        </tr>
-        <tr>
-            <td align="right">Nombre de Usuario/Correo :</td>
-            <td>@Html.TextBoxFor(m => m.Correo, new { @style = "width:200px", @id = "txtusername" })</td>
-        </tr>
-        <tr>
-            <td align="right">Contraseña :</td>
-            <td>@Html.PasswordFor(m => m.Contraseña, new { @style = "width:200px", @id = "txtuserpassword" })</td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <input type="submit" value="Acceder" title="login" onclick="" display(); />
-            </td>
-        </tr>
-    </table>
 
-    <form id="addRegistro" data-bind="submit: addRegistro">
-        <fieldset>
-            <legend>Registrarse</legend>
-            <ol>
-                <li>
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" name="Nombre" />
-                </li>
-                <li>
-                    <label for="Correo">Correo</label>
-                    <input type="text" name="Correo" />
-                </li>
-                <li>
-                    <label for="Contraseña">Contraseña</label>
-                    <input type="text" name="Contraseña" />
-                </li>
-            </ol>
-            <input type="submit" value="Agregar" />
-        </fieldset>
-    </form>
-}
+    <div id="https://www.facebook.com/xsandrhhha?fref=ts">
+        <body BACKGROUND="rosa2.jpg" ></body>
+        <!-- hidden anchor to stop jump https://www.facebook.com/xsandrhhha?fref=ts  -->
+        <a class="hiddenanchor" id="toregister"></a>
+        <a class="hiddenanchor" id="logio"></a>
+        <div id="wrapper">
+            <div id="login" class="animate form">
+                <form action="~/Scripts/script.sql" autocomplete="on">
+                    <DIV ALIGN="right"><h1>Iniciar Sesion</h1></DIV>
+                    
+                    <DIV ALIGN="right">
+                        <p>
+
+                            <label for="Nombre" class="uname" data-icon="u"> Correo o Nombre de Usuario </label>
+
+                            <input id="Nombre" name="Nombre" required="required" type="text" placeholder="myusername or mymail@mail.com" />
+                        </p>
+                    </DIV>
+   
+
+                    <DIV ALIGN="right">
+                        <p>
+
+                            <label for="Contraseña" class="youpasswd" data-icon="p"> Contraseña </label>
+                            <input id="Contraseña" name="Contraseña" required="required" type="password" placeholder="eg. X8df!90EO" />
+                        </p>
+                    </DIV>  
+   
+    
+                    <DIV ALIGN="right">
+                        <p class="keeplogin">
+
+                            <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                            <label for="loginkeeping">Dejar la sesion iniciada</label>
+                        </p>
+                    </DIV>
+   
+
+                    <DIV ALIGN="right">
+                        <p class="login button">
+                            <input type="submit" value="Login" />
+                        </p>
+                    </DIV>
+
+                    <DIV ALIGN="right">
+                        <p class="change_link">
+                           ¿ No te haz registrado aun ?
+                            <a href="#toregister" class="to_register">Registrate</a>
+                        </p>
+                    </DIV>
+
+                </form>
+            </div>
+
+            <div id="logio" class="animate form">
+                <form action="~/Scripts/script.sql" autocomplete="on">
+                    
+                    <DIV ALIGN="right">
+                        <h1> Registrate </h1>
+                    </DIV>
+                    
+                    <DIV ALIGN="right">
+                        <p>
+                            <label for="usernamesignup" class="uname" data-icon="u">Nombre de Usuario</label>
+                            <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                        </p>
+                    </DIV>
+
+                    <DIV ALIGN="right">
+                        <p>
+                            <label for="Correo" class="youmail" data-icon="e"> Correo</label>
+                            <input id="Correo" name="Correo" required="required" type="email" placeholder="mysupermail@mail.com" />
+                        </p>
+                    </DIV>
+
+                    <DIV ALIGN="right">
+                        <p>
+                            <label for="Contraseña" class="youpasswd" data-icon="p">Contraseña </label>
+                            <input id="Contraseña" name="Contraseña" required="required" type="password" placeholder="eg. X8df!90EO" />
+                        </p>
+                    </DIV>
+
+                    <DIV ALIGN="right">
+                        <p>
+                            <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Confirmar Contraseña </label>
+                            <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO" />
+                        </p>
+                    </DIV>
+
+                    <DIV ALIGN="right">
+                        <p class="signin button">
+                            <input type="submit" value="Guardar" />
+                        </p>
+                    </DIV>
+
+                    <DIV ALIGN="right">
+                        <p class="change_link">
+                            ¿ Ya tienes una cuenta ?
+                            <a href="#tologin" class="to_register"> Inicia Sesion</a>
+                        </p>
+                    </DIV>
+                </form>
+            </div>
+        </div>
+    </div>
+

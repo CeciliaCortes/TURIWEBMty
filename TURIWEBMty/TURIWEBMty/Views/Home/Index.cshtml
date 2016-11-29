@@ -3,16 +3,22 @@
     ViewBag.Title = "Index";
 }
 
-    <div id="https://www.facebook.com/xsandrhhha?fref=ts">
-        <body BACKGROUND="rosa2.jpg" ></body>
+<body BACKGROUND="rosa2.jpg">
+    
+    <div id="HomeController">
+        
         <!-- hidden anchor to stop jump https://www.facebook.com/xsandrhhha?fref=ts  -->
-        <a class="hiddenanchor" id="toregister"></a>
+        
         <a class="hiddenanchor" id="logio"></a>
+        
+        <a class="hiddenanchor" id="logio"></a>
+
         <div id="wrapper">
+            
             <div id="login" class="animate form">
                 <form action="~/Scripts/script.sql" autocomplete="on">
                     <DIV ALIGN="right"><h1>Iniciar Sesion</h1></DIV>
-                    
+
                     <DIV ALIGN="right">
                         <p>
 
@@ -21,7 +27,7 @@
                             <input id="Nombre" name="Nombre" required="required" type="text" placeholder="myusername or mymail@mail.com" />
                         </p>
                     </DIV>
-   
+
 
                     <DIV ALIGN="right">
                         <p>
@@ -29,9 +35,9 @@
                             <label for="Contraseña" class="youpasswd" data-icon="p"> Contraseña </label>
                             <input id="Contraseña" name="Contraseña" required="required" type="password" placeholder="eg. X8df!90EO" />
                         </p>
-                    </DIV>  
-   
-    
+                    </DIV>
+
+
                     <DIV ALIGN="right">
                         <p class="keeplogin">
 
@@ -39,7 +45,7 @@
                             <label for="loginkeeping">Dejar la sesion iniciada</label>
                         </p>
                     </DIV>
-   
+
 
                     <DIV ALIGN="right">
                         <p class="login button">
@@ -49,8 +55,8 @@
 
                     <DIV ALIGN="right">
                         <p class="change_link">
-                           ¿ No te haz registrado aun ?
-                            <a href="#toregister" class="to_register">Registrate</a>
+                            ¿ No te haz registrado aun ?
+                            <a href="~/Models/logio.cs" class="to_register">Registrate</a>
                         </p>
                     </DIV>
 
@@ -58,15 +64,16 @@
             </div>
 
             <div id="logio" class="animate form">
+                
                 <form action="~/Scripts/script.sql" autocomplete="on">
-                    
+
                     <DIV ALIGN="right">
                         <h1> Registrate </h1>
                     </DIV>
-                    
+
                     <DIV ALIGN="right">
                         <p>
-                            <label for="usernamesignup" class="uname" data-icon="u">Nombre de Usuario</label>
+                            <label for="usernamesignup" class="uname" data-icon="u">Nombre de Usuario</label>                            
                             <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
                         </p>
                     </DIV>
@@ -75,6 +82,7 @@
                         <p>
                             <label for="Correo" class="youmail" data-icon="e"> Correo</label>
                             <input id="Correo" name="Correo" required="required" type="email" placeholder="mysupermail@mail.com" />
+
                         </p>
                     </DIV>
 
@@ -87,8 +95,8 @@
 
                     <DIV ALIGN="right">
                         <p>
-                            <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Confirmar Contraseña </label>
-                            <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO" />
+                            <label for="contraseñaconfirmar" class="youpasswd" data-icon="p">Confirmar Contraseña </label>
+                            <input id="contraseñaconfirmar" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO" />
                         </p>
                     </DIV>
 
@@ -98,14 +106,14 @@
                         </p>
                     </DIV>
 
-                    <DIV ALIGN="right">
+                    <DIV ALIGN="right" >
                         <p class="change_link">
                             ¿ Ya tienes una cuenta ?
-                            <a href="#tologin" class="to_register"> Inicia Sesion</a>
+                                <a href="~/Models/logio.cs" class="to_register"> Inicia Sesion</a>
                         </p>
                     </DIV>
                 </form>
             </div>
-        </div>
-    </div>
-
+        </div>         
+    </div>   
+</body>

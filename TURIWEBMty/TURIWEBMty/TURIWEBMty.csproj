@@ -200,7 +200,6 @@
     <Folder Include="Views\Monterrey\" />
     <Folder Include="Views\Paras\" />
     <Folder Include="Views\Pesqueria\" />
-    <Folder Include="Views\Principal\" />
     <Folder Include="Views\Rayones\" />
     <Folder Include="Views\SabinasHidalgo\" />
     <Folder Include="Views\SalinasVictoria\" />
@@ -277,6 +276,7 @@
     <Compile Include="Controllers\JuarezController.cs" />
     <Compile Include="Controllers\LinaresController.cs" />
     <Compile Include="Controllers\LampazosDelNaranjoController.cs" />
+    <Compile Include="Controllers\logios1Controller.cs" />
     <Compile Include="Controllers\LosAldamasController.cs" />
     <Compile Include="Controllers\LosHerrerasController.cs" />
     <Compile Include="Controllers\LosRamonesController.cs" />
@@ -302,9 +302,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611280259088_initial.cs" />
-    <Compile Include="Migrations\201611280259088_initial.Designer.cs">
-      <DependentUpon>201611280259088_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201611302212257_initial.cs" />
+    <Compile Include="Migrations\201611302212257_initial.Designer.cs">
+      <DependentUpon>201611302212257_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Horario.cs" />
@@ -546,11 +546,13 @@
     <Content Include="Views\Shared\Vallecillo.cshtml" />
     <Content Include="Views\Shared\Villaldama.cshtml" />
     <Content Include="Views\Shared\Principal.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611280259088_initial.resx">
-      <DependentUpon>201611280259088_initial.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\logios1\Create.cshtml" />
+    <Content Include="Views\logios1\Delete.cshtml" />
+    <Content Include="Views\logios1\Details.cshtml" />
+    <Content Include="Views\logios1\Edit.cshtml" />
+    <Content Include="Views\logios1\Index.cshtml" />
+    <Content Include="Views\Principal\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -559,6 +561,11 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611302212257_initial.resx">
+      <DependentUpon>201611302212257_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,77 @@
+﻿<body BACKGROUND="rosa2.jpg">
+
+    @model IEnumerable<TURIWEBMty.Models.logio>
+    @{
+        ViewBag.Title = "Index";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    <div id="login" class="animate form">
+        @using (Html.BeginForm("Index", "Principal"))
+        {
+
+            <form autocomplete="on">
+                <DIV ALIGN="right"><h1>Iniciar Sesion</h1></DIV>
+                <DIV ALIGN="right">
+                    <p>
+                        <label for="Nombre" class="uname" data-icon="u"> Correo o Nombre de Usuario </label>
+                        <input id="Nombre" name="Nombre" required="required" type="text" placeholder="myusername or mymail@mail.com" />
+                    </p>
+                </DIV>
+                <DIV ALIGN="right">
+                    <p>
+                        <label for="Contraseña" class="youpasswd" data-icon="p"> Contraseña </label>
+                        <input id="Contraseña" name="Contraseña" required="required" type="password" placeholder="eg. X8df!90EO" />
+
+                    </p>
+                </DIV>
+                <DIV ALIGN="right">
+                    <p class="login button">
+                        <input type="submit" value="Acceder">
+
+                    </p>
+                </DIV>
+            </form>
+        }
+    </div>
+
+
+    <div id="logio" class="animate form">
+        @using (Html.BeginForm("Index", "logios1"))
+            {
+            <form action="" autocomplete="on">
+                <DIV ALIGN="right">
+                    <h1> Registrate </h1>
+                </DIV>
+                <DIV ALIGN="right">
+                    <p>
+                        <label for="usernamesignup" class="uname" data-icon="u">Nombre de Usuario</label>
+                        <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                    </p>
+                </DIV>
+                <DIV ALIGN="right">
+                    <p>
+                        <label for="Correo" class="youmail" data-icon="e"> Correo</label>
+                        <input id="Correo" name="Correo" required="required" type="email" placeholder="mysupermail@mail.com" />
+                    </p>
+                </DIV>
+                <DIV ALIGN="right">
+                    <p>
+                        <label for="Contraseña" class="youpasswd" data-icon="p">Contraseña </label>
+                        <input id="Contraseña" name="Contraseña" required="required" type="password" placeholder="eg. X8df!90EO" />
+                    </p>
+                </DIV>
+                <DIV ALIGN="right">
+                    <p>
+                        <label for="contraseñaconfirmar" class="youpasswd" data-icon="p">Confirmar Contraseña </label>
+                        <input id="contraseñaconfirmar" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO" />
+                    </p>
+                </DIV>
+                <DIV ALIGN="right">
+                    <p class="signin button">
+                        <input type="submit" value="Guardar" />
+                    </p>
+                </DIV>
+            </form>
+        }
+    </div>
+</body>

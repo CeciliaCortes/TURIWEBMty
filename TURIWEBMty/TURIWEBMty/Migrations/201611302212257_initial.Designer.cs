@@ -6,14 +6,14 @@ namespace TURIWEBMty.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
+    [GeneratedCode("EntityFramework.Migrations", "6.1.2-31219")]
     public sealed partial class initial : IMigrationMetadata
     {
         private readonly ResourceManager Resources = new ResourceManager(typeof(initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "201611280259088_initial"; }
+            get { return "201611302212257_initial"; }
         }
         
         string IMigrationMetadata.Source

@@ -196,7 +196,6 @@
     <Folder Include="Views\MierYNoriega\" />
     <Folder Include="Views\Mina\" />
     <Folder Include="Views\Montemorelos\" />
-    <Folder Include="Views\Monterrey\" />
     <Folder Include="Views\Paras\" />
     <Folder Include="Views\Pesqueria\" />
     <Folder Include="Views\Rayones\" />
@@ -534,7 +533,7 @@
     <Content Include="Views\Shared\MierYNoriega.cshtml" />
     <Content Include="Views\Shared\Mina.cshtml" />
     <Content Include="Views\Shared\Montemorelos.cshtml" />
-    <Content Include="Views\Shared\Monterrey.cshtml" />
+    <Content Include="Views\Monterrey\Monterrey.cshtml" />
     <Content Include="Views\Shared\Paras.cshtml" />
     <Content Include="Views\Shared\Pesqueria.cshtml" />
     <Content Include="Views\Shared\LosRamones.cshtml" />

@@ -19,18 +19,14 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("TuriWebMty","Index","Home", new { area = "" }, new { @class = "navbar-brand" })</li>
-                    <li>@Html.ActionLink("INICIAR SESION", "Index", "logios1")</li>
+                    <li>@Html.ActionLink("TuriWebMty","Index","logios1", new { area = "" }, new { @class = "navbar-brand" })</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - TuriWebMty </p>
-        </footer>
+       
     </div>
 
     @Scripts.Render("~/bundles/jquery")

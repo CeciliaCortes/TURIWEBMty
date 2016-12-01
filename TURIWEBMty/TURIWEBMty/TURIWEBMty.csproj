@@ -158,7 +158,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Agualeguas\" />
     <Folder Include="Views\Allende\" />
     <Folder Include="Views\Anahuac\" />
     <Folder Include="Views\Apodaca\" />
@@ -195,7 +194,6 @@
     <Folder Include="Views\MierYNoriega\" />
     <Folder Include="Views\Mina\" />
     <Folder Include="Views\Montemorelos\" />
-    <Folder Include="Views\Paras\" />
     <Folder Include="Views\Pesqueria\" />
     <Folder Include="Views\Rayones\" />
     <Folder Include="Views\SabinasHidalgo\" />
@@ -556,6 +554,8 @@
     <Content Include="Views\abasolo.cshtml" />
     <Content Include="Views\apodaca.cshtml" />
     <Content Include="Views\Lampazos\Index.cshtml" />
+    <Content Include="Views\Paras\Index.cshtml" />
+    <Content Include="Views\Agualeguas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

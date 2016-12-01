@@ -1,8 +1,8 @@
 ﻿
-@model IEnumerable<TURIWEBMty.Models.logio>
+
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/logios1/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <link href="style/estilo.css" rel="stylesheet" type="text/css" media="screen">
 
@@ -13,7 +13,7 @@
         include "include/azullampazos.php";
         ?>
         <div id="page">
-            <h1>Bienvenido</h1>
+            <h1>Bienvenido Lampazos del naranjo </h1>
 
             <br>
             <div class="intro">
@@ -23,8 +23,8 @@
             Lugar Turistico.<br>
             A un kilómetro de Lampazos, brota el Ojo de Agua, quizá el más grande en el estado. Está rodeado de gigantescos sabinos y cuenta con asadores para que los visitantes disfruten cómodamente del lugar y del paisaje.
 
-
-            <br> <center><img style="margin:12px 0 12px 0;" src="img/Lampazo1.jpg" width="620" height="400" alt="Imagen para el intro" title="Allende"></center><br>
+            
+            <br> <center><img style="margin:12px 0 12px 0;" src="~/Lampazo1.jpg" width="620" height="400" alt="Imagen para el intro" title="Allende"></center><br>
 
 
 
@@ -58,15 +58,10 @@
 
 
         <center>
-            <img style="margin:12px 0 12px 0;" src="img/Lampazos2.jpg" width="620" height="400" alt="Imagen para el intro" title="Allende"><br>
+            <img style="margin:12px 0 12px 0;" src="~/Lampazos2.jpg" width="620" height="400" alt="Imagen para el intro" title="Allende"><br>
         </center>
 
         <br>
-        <center>
-            <center>
-                <a href="index2.php"><font color="#black">REGRESAR A LA PAGINA PRINCIPAL</font></a><br>
-            </center>
-
-        </center>
+        
     </div>
 </body>

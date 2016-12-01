@@ -158,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Abasolo\" />
     <Folder Include="Views\Allende\" />
     <Folder Include="Views\Apodaca\" />
     <Folder Include="Views\Arramberri\" />

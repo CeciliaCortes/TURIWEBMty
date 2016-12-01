@@ -187,7 +187,6 @@
     <Folder Include="Views\Iturbide\" />
     <Folder Include="Views\Juarez\" />
     <Folder Include="Views\LampazosDeNaranjos\" />
-    <Folder Include="Views\Lampazos\" />
     <Folder Include="Views\LosAldamas\" />
     <Folder Include="Views\LosHerreras\" />
     <Folder Include="Views\LosRamones\" />
@@ -556,6 +555,7 @@
     <Content Include="Views\Principal\Index.cshtml" />
     <Content Include="Views\abasolo.cshtml" />
     <Content Include="Views\apodaca.cshtml" />
+    <Content Include="Views\Lampazos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

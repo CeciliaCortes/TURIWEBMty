@@ -534,7 +534,6 @@
     <Content Include="Views\Shared\LosRamones.cshtml" />
     <Content Include="Views\Shared\Rayones.cshtml" />
     <Content Include="Views\Shared\SabinasHidalgo.cshtml" />
-    <Content Include="Views\SalinasVictoria\SalinasVictoria.cshtml" />
     <Content Include="Views\Shared\SanNicolasDeLosGarza.cshtml" />
     <Content Include="Views\Shared\Hidalgo.cshtml" />
     <Content Include="Views\Shared\SantaCatarina.cshtml" />

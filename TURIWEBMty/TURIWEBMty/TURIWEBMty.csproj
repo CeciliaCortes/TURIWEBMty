@@ -159,7 +159,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Allende\" />
-    <Folder Include="Views\Anahuac\" />
     <Folder Include="Views\Apodaca\" />
     <Folder Include="Views\Arramberri\" />
     <Folder Include="Views\Bustamante\" />
@@ -197,7 +196,6 @@
     <Folder Include="Views\Pesqueria\" />
     <Folder Include="Views\Rayones\" />
     <Folder Include="Views\SabinasHidalgo\" />
-    <Folder Include="Views\SalinasVictoria\" />
     <Folder Include="Views\SanNicolasDeLosGarza\" />
     <Folder Include="Views\SanPedroGarzaGarcia\" />
     <Folder Include="Views\SantaCatarina\" />
@@ -496,7 +494,7 @@
     <Content Include="Views\Shared\Agualeguas.cshtml" />
     <Content Include="Views\Shared\LosAldamas.cshtml" />
     <Content Include="Views\Shared\Allende.cshtml" />
-    <Content Include="Views\Shared\Anahuac.cshtml" />
+    <Content Include="Views\Anahuac\Index.cshtml" />
     <Content Include="Views\Shared\Apodaca.cshtml" />
     <Content Include="Views\Shared\Arramberri.cshtml" />
     <Content Include="Views\Shared\Bustamante.cshtml" />
@@ -530,13 +528,13 @@
     <Content Include="Views\Shared\MierYNoriega.cshtml" />
     <Content Include="Views\Shared\Mina.cshtml" />
     <Content Include="Views\Shared\Montemorelos.cshtml" />
-    <Content Include="Views\Monterrey\Monterrey.cshtml" />
+    <Content Include="Views\Monterrey\Index.cshtml" />
     <Content Include="Views\Shared\Paras.cshtml" />
     <Content Include="Views\Shared\Pesqueria.cshtml" />
     <Content Include="Views\Shared\LosRamones.cshtml" />
     <Content Include="Views\Shared\Rayones.cshtml" />
     <Content Include="Views\Shared\SabinasHidalgo.cshtml" />
-    <Content Include="Views\Shared\SalinasVictoria.cshtml" />
+    <Content Include="Views\SalinasVictoria\SalinasVictoria.cshtml" />
     <Content Include="Views\Shared\SanNicolasDeLosGarza.cshtml" />
     <Content Include="Views\Shared\Hidalgo.cshtml" />
     <Content Include="Views\Shared\SantaCatarina.cshtml" />

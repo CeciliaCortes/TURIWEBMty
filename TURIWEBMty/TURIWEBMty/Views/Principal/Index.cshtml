@@ -1,84 +1,199 @@
-﻿<html>
+﻿
     @{
         ViewBag.Title = "Index";
         Layout = "~/Views/Shared/_Layout.cshtml";
     }
   
     <body style="background-image:url(../../neptuno2.jpg); background-repeat:no-repeat; background-attachment: fixed">
-     
-        <center>
-            <MARQUEE BGCOLOR="#32CD32">
-                <FONT FACE="arial" SIZE=20 COLOR=white>Visita Nuevo Leon</FONT>
-                </MARQUEE>
-                <p>
-                    <img src="~/Logo.jpg">
-                </p>
-</center>
+
+    <center>
+        <MARQUEE BGCOLOR="#32CD32">
+            <FONT FACE="arial" SIZE=20 COLOR=white>Visita Nuevo Leon</FONT>
+        </MARQUEE>
         <p>
-            <br />Escucha la musica de monterrey
+            <img src="~/Logo.jpg">
         </p>
-        <audio src="~/Corrido de Monterrey - La Sultana del Norte ..mp3" controls></audio>
-        
-        
-        
-        
-        <MARQUEE BGCOLOR="#32CD32">Selecciona El Municipio Que Deseas Visitar</MARQUEE>
-        
-            <p>@Html.ActionLink("Abasolo", "Index", "Abasolo")</p>
-            <p>@Html.ActionLink("Agualeguas", "Index", "Agualeguas") </p>
-            <p>@Html.ActionLink("Allende", "Index", "Allende") </p>
-            <p>@Html.ActionLink("Anahuac", "Index", "Anahuac") </p>
-            <p>@Html.ActionLink("Apodaca", "Index", "Apodaca") </p>
-            <p>@Html.ActionLink("Arramberri", "Index", "Arramberri") </p>
-            <p>@Html.ActionLink("Bustamante", "Index", "Bustamante") </p>
-            <p>@Html.ActionLink("Cadereyta", "Index", "CadereytaJimenez") </p>
-            <p>@Html.ActionLink("Carmen", "Index", "Carmen") </p>
-            <p>@Html.ActionLink("Cerralvo", "Index", "Cerralvo") </p>
-            <p>@Html.ActionLink("China", "Index", "China") </p>
-            <p>@Html.ActionLink("Cienega de Flores", "Index", "CienegaDeFlores") </p>
-            <p>@Html.ActionLink("Doctor Arroyo", "Index", "DoctorArroyo") </p>
-            <p>@Html.ActionLink("Doctor Coss", "Index", "DoctorCoss") </p>
-            <p>@Html.ActionLink("Doctor Gonzales", "Index", "DoctorGonzales") </p>
-            <p>@Html.ActionLink("Galeana", "Index", "Galeana") </p>
-            <p>@Html.ActionLink("Garcia", "Index", "Garcia") </p>
-            <p>@Html.ActionLink("General Bravo", "Index", "GeneralBravo") </p>
-            <p>@Html.ActionLink("General Escobedo", "Index", "GeneralEscobedo") </p>
-            <p>@Html.ActionLink("General Teran", "Index", "GeneralTeran") </p>
-            <p>@Html.ActionLink("General Treviño", "Index", "GeneralTreviño") </p>
-            <p>@Html.ActionLink("General Zaragoza", "Index", "GeneralZaragoza")</p>
-            <p>@Html.ActionLink("General Zuazua", "Index", "GeneralZuazua") </p>
-            <p>@Html.ActionLink("Guadalupe", "Index", "Guadalupe") </p>
-            <p>@Html.ActionLink("Hidalgo", "Index", "Hidalgo") </p>
-            <p>@Html.ActionLink("Higueras", "Index", "Higueras") </p>
-            <p>@Html.ActionLink("Hualahuises", "Index", "Hualahuises") </p>
-            <p>@Html.ActionLink("Iturbide", "Index", "Iturbide") </p>
-            <p>@Html.ActionLink("Juarez", "Index", "Juarez") </p>
-            <p>@Html.ActionLink("Lampazos del Naranjo", "Index", "LampazosDelNaranjo") </p>
-            <p>@Html.ActionLink("Linares", "Index", "Linares") </p>
-            <p>@Html.ActionLink("Los Aldamas", "Index", "LosAldamas") </p>
-            <p>@Html.ActionLink("Los Herreras", "Index", "LosHerreras") </p>
-            <p>@Html.ActionLink("Los Ramones", "Index", "LosRamones") </p>
-            <p>@Html.ActionLink("Marin", "Index", "Marin")</p>
-            <p>@Html.ActionLink("Melchor Ocampo", "Index", "MelchorOcampo") </p>
-            <p>@Html.ActionLink("Mier y Noriega", "Index", "MierYNoriega") </p>
-            <p>@Html.ActionLink("Mina", "Index", "Mina") </p>
-            <p>@Html.ActionLink("Montemorelos", "Index", "Montemorelos") </p>
-            <p>@Html.ActionLink("Monterrey", "Index", "Monterrey") </p>
-            <p>@Html.ActionLink("Paras", "Index", "Paras")</p>
-            <p>@Html.ActionLink("Pesqueria", "Index", "Pesqueria") </p>
-            <p>@Html.ActionLink("Rayones", "Index", "Rayones")</p>
-            <p>@Html.ActionLink("Sabinas Hidalgo", "Index", "SabinasHidalgo") </p>
-            <p>@Html.ActionLink("Salinas Victoria", "Index", "SalinasVictoria") </p>
-            <p>@Html.ActionLink("San Nicolas de los Garza", "Index", "SanNicolasDeLosGarza") </p>
-            <p>@Html.ActionLink("San Pedro Garza Garcia", "Index", "SanPedroGarzaGarcia") </p>
-            <p>@Html.ActionLink("Santa Catarina", "Index", "SantaCatarina") </p>
-            <p>@Html.ActionLink("Santiago", "Index", "Santiago") </p>
-            <p>@Html.ActionLink("Vallecillo", "Index", "Vallecillo") </p>
-            <p>@Html.ActionLink("Villaldama", "Index", "Villaldama") </p>
-        
-        
-      
-        
-        
-    </body>
-</html>
+    </center>
+    <MARQUEE BGCOLOR="#32CD32">Selecciona El Municipio Que Deseas Visitar</MARQUEE>
+
+        <ul >
+            <li> @Html.ActionLink("Abasolo", "Index", "Abasolo")</li>
+            <li>
+                @Html.ActionLink("Agualeguas", "Index", "Agualeguas")
+            </li>
+            <li>
+                @Html.ActionLink("Allende", "Index", "Allende")
+            </li>
+            <li>
+                @Html.ActionLink("Anahuac", "Index", "Anahuac")
+            </li>
+            <li>
+                @Html.ActionLink("Apodaca", "Index", "Apodaca")
+            </li>
+            <li>
+                @Html.ActionLink("Arramberri", "Index", "Arramberri")
+            </li>
+            <li>
+                @Html.ActionLink("Bustamante", "Index", "Bustamante")
+            </li>
+            <li>
+                @Html.ActionLink("Cadereyta", "Index", "CadereytaJimenez")
+            </li>
+            <li>
+                @Html.ActionLink("Carmen", "Index", "Carmen")
+            </li>
+            <li>
+                @Html.ActionLink("Cerralvo", "Index", "Cerralvo")
+            </li>
+            <li>
+                @Html.ActionLink("China", "Index", "China")
+            </li>
+            <li>
+                @Html.ActionLink("Cienega de Flores", "Index", "CienegaDeFlores")
+            </li>
+            <li>
+                @Html.ActionLink("Doctor Arroyo", "Index", "DoctorArroyo")
+            </li>
+            <li>
+                @Html.ActionLink("Doctor Coss", "Index", "DoctorCoss")
+            </li>
+            <li>
+                @Html.ActionLink("Doctor Gonzales", "Index", "DoctorGonzales")
+            </li>
+            <li>
+
+                @Html.ActionLink("Galeana", "Index", "Galeana")
+            </li>
+            <li>
+                @Html.ActionLink("Garcia", "Index", "Garcia")
+            </li>
+            <li>
+                @Html.ActionLink("General Bravo", "Index", "GeneralBravo")
+            </li>
+            <li>
+                @Html.ActionLink("General Escobedo", "Index", "GeneralEscobedo")
+            </li>
+            <li>
+                @Html.ActionLink("General Teran", "Index", "GeneralTeran")
+            </li>  <li>
+                @Html.ActionLink("General Treviño", "Index", "GeneralTreviño")
+            </li> <li>
+                @Html.ActionLink("General Zaragoza", "Index", "GeneralZaragoza")
+            </li>        <li>
+                @Html.ActionLink("General Zuazua", "Index", "GeneralZuazua")
+            </li>        <li>
+                @Html.ActionLink("Guadalupe", "Index", "Guadalupe")
+            </li><li>
+                @Html.ActionLink("Hidalgo", "Index", "Hidalgo")
+            </li><li>
+                @Html.ActionLink("Higueras", "Index", "Higueras")
+            </li>
+                <li>
+                        @Html.ActionLink("Hualahuises", "Index", "Hualahuises")
+                </li>
+                <li>
+                        @Html.ActionLink("Iturbide", "Index", "Iturbide")
+                </li>
+                <li>
+                        @Html.ActionLink("Juarez", "Index", "Juarez")
+                </li>
+                <li>
+                        @Html.ActionLink("Lampazos del Naranjo", "Index", "LampazosDelNaranjo")
+                </li>
+                <li>@Html.ActionLink("Linares", "Index", "Linares")
+                </li>
+                <li>
+                        @Html.ActionLink("Los Aldamas", "Index", "LosAldamas")
+                </li>
+                <li>
+                        @Html.ActionLink("Los Herreras", "Index", "LosHerreras")
+                </li>
+                <li>
+                        @Html.ActionLink("Los Ramones", "Index", "LosRamone")
+                </li>
+                <li>
+                        @Html.ActionLink("Marin", "Index", "Marin")
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("Melchor Ocampo", "Index", "MelchorOcampo")
+                   
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("Mier y Noriega", "Index", "MierYNoriega")
+                    
+                </li>
+                <li>
+                   
+                        @Html.ActionLink("Mina", "Index", "Mina")
+                   
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("Montemorelos", "Index", "Montemorelos")
+                    
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("Monterrey", "Index", "Monterrey")
+                    
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("Paras", "Index", "Paras")
+                   
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("Pesqueria", "Index", "Pesqueria")
+                </li>
+                <li>
+                        @Html.ActionLink("Rayones", "Index", "Rayones")
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("Sabinas Hidalgo", "Index", "SabinasHidalgo")
+                   
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("Salinas Victoria", "Index", "SalinasVictoria")
+                    
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("San Nicolas de los Garza", "Index", "SanNicolasDeLosGarza")
+                   
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("San Pedro Garza Garcia", "Index", "SanPedroGarzaGarcia")
+                    
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("Santa Catarina", "Index", "SantaCatarina")
+                    
+                </li>
+                <li>
+                        @Html.ActionLink("Santiago", "Index", "Santiago")
+                    
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("Vallecillo", "Index", "Vallecillo")
+                    
+                </li>
+                <li>
+                    
+                        @Html.ActionLink("Villaldama", "Index", "Villaldama")
+                   
+                </li>
+            
+</ul>
+        <center>
+            <audio src="~/Corrido de Monterrey - La Sultana del Norte ..mp3" controls></audio>
+            <a href="~/Views/abasolo.cshtml"></a>
+        </center>
+</body>

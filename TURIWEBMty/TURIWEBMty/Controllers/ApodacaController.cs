@@ -11,7 +11,7 @@ namespace TURIWEBMty.Controllers
         // GET: Apodaca
         public ActionResult Index()
         {
-            return View();
+            return PartialView();
         }
     }
 }

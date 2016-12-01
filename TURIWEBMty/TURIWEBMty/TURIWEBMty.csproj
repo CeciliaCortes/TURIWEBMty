@@ -158,7 +158,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Abasolo\" />
     <Folder Include="Views\Agualeguas\" />
     <Folder Include="Views\Allende\" />
     <Folder Include="Views\Anahuac\" />
@@ -357,11 +356,13 @@
     <Content Include="computacion.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Corrido de Monterrey - La Sultana del Norte ..mp3" />
     <Content Include="coss.jpg" />
     <Content Include="coss1.jpg" />
     <Content Include="cossmapa.jpg" />
     <Content Include="cursos.jpg" />
     <Content Include="descarga %287%29.jpg" />
+    <Content Include="descarga.jpg" />
     <Content Include="descargar.jpg" />
     <Content Include="doctormapa.jpg" />
     <Content Include="eliminar.png" />
@@ -428,9 +429,11 @@
     <Content Include="Melchoocampo2.jpg" />
     <Content Include="misitio.jpg" />
     <Content Include="monuapodaca.jpg" />
+    <Content Include="neptuno2.jpg" />
     <Content Include="oso.jpg" />
     <Content Include="pasalgebra.jpg" />
     <Content Include="pascomputacion.jpg" />
+    <Content Include="paseo.jpg" />
     <Content Include="pastopografia.jpg" />
     <Content Include="photoEscudo_Nuevo_Leon_cd_macroplaza.jpg" />
     <Content Include="photoEscudo_Nuevo_Leon_nuevoleonfundidora.jpg" />
@@ -494,7 +497,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\Abasolo.cshtml" />
     <Content Include="Views\Shared\Agualeguas.cshtml" />
     <Content Include="Views\Shared\LosAldamas.cshtml" />
     <Content Include="Views\Shared\Allende.cshtml" />
@@ -553,6 +555,8 @@
     <Content Include="Views\logios1\Edit.cshtml" />
     <Content Include="Views\logios1\Index.cshtml" />
     <Content Include="Views\Principal\Index.cshtml" />
+    <Content Include="Views\abasolo.cshtml" />
+    <Content Include="Views\apodaca.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
